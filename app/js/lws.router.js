@@ -6,7 +6,7 @@
 
 (function(){
     //this is our main module for the router.
-    var app = angular.module( "lws.router" , ["ui.router"] );
+    var app = angular.module( "lwsDOTrouter" , ["ui.router"] );
 
     app.config(function($stateProvider, $urlRouterProvider) {
         
@@ -18,6 +18,14 @@
             .state('home', {
                 url: "/home",
                 templateUrl: "partials/views/home.html"
+            })
+            .state('clients', {
+                url: "/clients",
+                templateUrl: "partials/views/clients.html"
+            })
+            .state('projects', {
+                url: "/projects",
+                templateUrl: "partials/views/projects.html"
             });
     });
 
